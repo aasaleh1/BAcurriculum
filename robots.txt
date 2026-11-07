@@ -1,0 +1,4 @@
+# Internal staff material. Ask search engines not to index it.
+# Delete this file (or change Disallow to "Allow: /") to let the site be found in search.
+User-agent: *
+Disallow: /
