@@ -4,208 +4,381 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Bayaan Academy Curriculum Guides</title>
-<meta name="description" content="What every grade at Bayaan Academy teaches each quarter in 2026-27: standards, units, activities and resources, by subject.">
+<meta name="description" content="What every grade at Bayaan Academy teaches each quarter in 2026-27, across all five subjects, with the standards and activities behind it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%231B365D'/><path d='M9 23V9h6.2c2.6 0 4.2 1.3 4.2 3.4 0 1.5-.8 2.5-2.1 3 1.7.4 2.7 1.6 2.7 3.3 0 2.5-1.8 4.3-4.8 4.3H9Zm3-8.4h2.6c1.1 0 1.8-.6 1.8-1.5s-.7-1.5-1.8-1.5H12v3Zm0 5.9h2.9c1.3 0 2-.6 2-1.7s-.7-1.7-2-1.7H12v3.4Z' fill='%23fff'/></svg>">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230E4F4A'/%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.6'%3E%3Cpath d='M7 8h18M7 16h18M7 24h18M12 6v20M20 6v20'/%3E%3C/g%3E%3C/svg%3E">
 <style>
 :root{
-  --paper:#FFFFFF; --card:#FFFFFF; --sunk:#F5F3EE;
-  --ink:#141A22; --ink-2:#414D5C; --ink-3:#6D7889;
-  --rule:#E2DED5; --rule-2:#CDC7B9;
-  --ela:#1B365D; --math:#1B365D; --sci:#0F5257; --soc:#7A2E1F; --qais:#1F4D3A;
-  --accent:#1B365D;
-  --display:"Bricolage Grotesque",Georgia,serif;
-  --sans:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --shadow:0 1px 2px rgba(20,26,34,.05), 0 14px 32px -20px rgba(20,26,34,.3);
+  --paper:#F7F8F6;
+  --sheet:#FFFFFF;
+  --ink:#16202A;
+  --ink-2:#44525F;
+  --ink-3:#6E7B86;
+  --line:#DCE1DC;
+  --line-2:#C3CBC4;
+  --teal:#0E4F4A;
+  --teal-dim:#0B3D39;
+  --q1:#0E4F4A; --q2:#2E6E52; --q3:#7A6410; --q4:#7A3B2E;
+  --ela:#1B365D; --math:#0E4F4A; --sci:#2E6E52; --soc:#7A3B2E; --qais:#4A3C7A;
+  --serif:"Literata",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#11151A; --card:#1A2029; --sunk:#171C23;
-    --ink:#EAE7E0; --ink-2:#B4BCC7; --ink-3:#86909F;
-    --rule:#2A313B; --rule-2:#3B4552;
-    --ela:#9DBBE0; --math:#9DBBE0; --sci:#59BDB2; --soc:#E09C84; --qais:#6FBF95;
-    --accent:#9DBBE0;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 32px -20px rgba(0,0,0,.7);
+    --paper:#10161B; --sheet:#182028; --ink:#E8EBE6; --ink-2:#AFBAC1; --ink-3:#86919A;
+    --line:#2A333B; --line-2:#3C4751;
+    --teal:#6FC2B4; --teal-dim:#8FD3C7;
+    --q1:#6FC2B4; --q2:#79C295; --q3:#D0B65E; --q4:#E0A38E;
+    --ela:#9DBBE0; --sci:#79C295; --soc:#E0A38E; --qais:#B0A0E0; --math:#6FC2B4;
     color-scheme:dark;
   }
 }
-:root[data-theme="dark"]{
-  --paper:#11151A; --card:#1A2029; --sunk:#171C23;
-  --ink:#EAE7E0; --ink-2:#B4BCC7; --ink-3:#86909F;
-  --rule:#2A313B; --rule-2:#3B4552;
-  --ela:#9DBBE0; --math:#9DBBE0; --sci:#59BDB2; --soc:#E09C84; --qais:#6FBF95;
-  --accent:#9DBBE0;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 32px -20px rgba(0,0,0,.7);
-  color-scheme:dark;
-}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
-  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;text-wrap:balance}
-a{color:var(--accent)}
-.wrap{max-width:1080px;margin:0 auto;padding:40px 24px 80px}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;font-weight:400;line-height:1.5;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance;
+  letter-spacing:-.012em}
+a{color:var(--teal)}
+button{font:inherit;color:inherit}
 
-/* masthead */
-.masthead{border-bottom:2px solid var(--ink);padding-bottom:20px}
-.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ink-3);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.kicker .dot{width:4px;height:4px;border-radius:50%;background:var(--rule-2)}
-.masthead h1{font-size:clamp(34px,5.6vw,58px);line-height:.98;letter-spacing:-.025em;margin:14px 0 0}
-.masthead h1 span{display:block;font-weight:700}
-.deck{font-size:17px;color:var(--ink-2);max-width:60ch;margin:16px 0 0}
+.shell{max-width:1224px;margin:0 auto;padding:0 22px}
 
-/* section labels */
-.sec{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  font-weight:500;color:var(--ink-3);margin:48px 0 16px;padding-bottom:8px;
-  border-bottom:1px solid var(--rule)}
+/* ---- masthead ---- */
+.top{border-bottom:1px solid var(--line);background:var(--sheet)}
+.top .shell{display:flex;align-items:center;gap:18px;min-height:58px;flex-wrap:wrap}
+.mark{display:flex;align-items:baseline;gap:9px;text-decoration:none;color:inherit}
+.mark b{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:-.015em}
+.mark span{font-size:13.5px;color:var(--ink-3)}
+.top nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.top nav a{font-size:13.5px;color:var(--ink-2);text-decoration:none;padding:6px 9px;
+  border-radius:3px;line-height:1.2}
+.top nav a:hover{color:var(--ink);background:var(--paper)}
+.top nav a:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
 
-/* subject cards */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
-.card{--mark:var(--accent);
-  position:relative;display:flex;flex-direction:column;gap:9px;
-  background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--mark);
-  border-radius:3px;padding:22px 24px 20px;text-decoration:none;color:inherit;
-  transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease}
-.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--rule-2);
-  border-left-color:var(--mark)}
-.card:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
-.card .band{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--mark);font-weight:500}
-.card h3{font-size:25px;line-height:1.08;letter-spacing:-.015em}
-.card p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.5}
-.card .meta{margin-top:auto;padding-top:12px;display:flex;align-items:center;
-  justify-content:space-between;gap:10px;border-top:1px solid var(--rule);
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;color:var(--ink-3)}
-.card .meta b{color:var(--mark);font-weight:500}
-.card .meta .arw{transition:transform .14s ease}
-.card:hover .meta .arw{transform:translateX(3px)}
-.card.ela{--mark:var(--ela)} .card.math{--mark:var(--math)} .card.sci{--mark:var(--sci)}
-.card.soc{--mark:var(--soc)} .card.qais{--mark:var(--qais)}
+/* ---- opening ---- */
+.open{padding:46px 0 0}
+.open h1{font-size:clamp(30px,4.4vw,46px);line-height:1.08;max-width:17ch}
+.open p{margin:14px 0 0;font-size:17px;color:var(--ink-2);max-width:56ch;line-height:1.58}
 
-.gridnote{margin:18px 0 0;font-size:14px;color:var(--ink-3);max-width:72ch;
-  padding-left:13px;border-left:2px solid var(--rule-2)}
+/* ---- grade rail ---- */
+.rail{margin:30px 0 0;padding:14px 0 0;border-top:1px solid var(--line)}
+.rail h2{font-size:15px;font-family:var(--sans);font-weight:500;color:var(--ink-2);
+  margin-bottom:11px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{min-width:46px;padding:9px 11px;background:var(--sheet);border:1px solid var(--line-2);
+  border-radius:3px;font-size:15px;font-weight:450;font-variant-numeric:tabular-nums;
+  cursor:pointer;line-height:1.1}
+.chip:hover{border-color:var(--teal);color:var(--teal)}
+.chip:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.chip[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;
+  font-weight:500}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#0C1216}}
 
-/* sub-links under ELA */
-.subs{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.sub{display:inline-flex;align-items:center;gap:7px;background:var(--sunk);
-  border:1px solid var(--rule);border-radius:999px;padding:6px 14px;
-  font-size:13px;color:var(--ink-2);text-decoration:none;transition:border-color .14s,color .14s}
-.sub:hover{border-color:var(--rule-2);color:var(--ink)}
-.sub:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.sub .pip{width:5px;height:5px;border-radius:50%;background:var(--ela)}
+/* ---- planner ---- */
+.plan{margin:26px 0 0;background:var(--sheet);border:1px solid var(--line);border-radius:4px;
+  overflow:hidden}
+.plan-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  padding:16px 20px;border-bottom:1px solid var(--line)}
+.plan-head h3{font-size:22px}
+.plan-head .who{font-size:14px;color:var(--ink-3)}
+.plan-scroll{overflow-x:auto}
+table.grid{border-collapse:collapse;width:100%;min-width:860px}
+table.grid th,table.grid td{text-align:left;vertical-align:top;padding:12px 14px;
+  border-top:1px solid var(--line)}
+table.grid thead th{border-top:0;padding-top:13px;padding-bottom:11px;
+  font-size:14px;font-weight:600;font-family:var(--sans)}
+table.grid thead th.qh{border-top:3px solid var(--qc);color:var(--qc)}
+table.grid thead th .wk{display:block;font-weight:400;font-size:12.5px;color:var(--ink-3);
+  margin-top:2px}
+th.subj{width:186px;font-family:var(--serif);font-size:16.5px;font-weight:500;
+  border-left:3px solid var(--sc);background:var(--paper)}
+th.subj .course{display:block;font-family:var(--sans);font-size:12.5px;font-weight:400;
+  color:var(--ink-3);margin-top:3px;line-height:1.35}
+th.subj a{display:block;width:max-content;max-width:100%;
+  margin-top:7px;font-size:12.5px;font-family:var(--sans);
+  color:var(--sc);text-decoration:none;border-bottom:1px solid currentColor;
+  padding-bottom:1px;font-weight:450}
+th.subj a:focus-visible{outline:2px solid var(--sc);outline-offset:2px}
+td.cell{width:19%;font-size:14px;line-height:1.45}
+td.cell ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+td.cell li .ut{color:var(--ink);display:block}
+td.cell li .uw{color:var(--ink-3);font-size:12.5px;font-variant-numeric:tabular-nums}
+td.cell li .anchor{display:block;color:var(--ink-2);font-style:italic;font-size:13px;
+  margin-top:1px}
+td.cell.empty{color:var(--ink-3);font-size:13.5px}
+tr.band td{border-top:1px solid var(--line);background:var(--paper);font-size:14px}
+tr.band .strands{display:flex;gap:18px;flex-wrap:wrap}
+tr.band .strands div span{display:block;color:var(--ink-3);font-size:12.5px}
+.plan-note{padding:12px 20px;border-top:1px solid var(--line);font-size:13px;
+  color:var(--ink-3);background:var(--paper)}
 
-/* how it works */
-.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
-.note h3{font-size:18px;margin-bottom:6px;letter-spacing:-.01em}
-.note p{margin:0;font-size:14.5px;color:var(--ink-2)}
+/* ---- guides ---- */
+.guides{margin:58px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.guides h2{font-size:24px;margin-bottom:6px}
+.guides > p{margin:0 0 20px;color:var(--ink-2);max-width:62ch}
+.glist{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.g{background:var(--sheet);padding:20px 22px;text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;gap:7px;border-left:3px solid var(--gc)}
+.g:hover{background:var(--paper)}
+.g:focus-visible{outline:2px solid var(--gc);outline-offset:-2px}
+.g h3{font-size:19px}
+.g p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.5}
+.g .stat{margin-top:auto;padding-top:11px;font-size:13px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
 
-footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);
-  font-size:13.5px;color:var(--ink-3);max-width:74ch}
-footer a{color:var(--ink-3)}
+/* ---- notes ---- */
+.notes{margin:52px 0 0;padding-top:14px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.notes h3{font-size:17px;margin-bottom:5px}
+.notes p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.55}
+
+footer{margin-top:56px;border-top:1px solid var(--line);background:var(--sheet)}
+footer .shell{padding:22px 24px 40px;font-size:13.5px;color:var(--ink-3);max-width:1140px}
+footer p{margin:0;max-width:76ch;line-height:1.6}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media (max-width:640px){.wrap{padding:26px 16px 56px}body{font-size:15.5px}}
-@media print{.card{break-inside:avoid;border-left-width:3px}}
+@media (max-width:700px){
+  .shell{padding:0 16px}
+  .open{padding-top:30px}
+  body{font-size:15.5px}
+  footer .shell{padding:20px 16px 34px}
+}
+@media print{
+  .top nav,.rail{display:none}
+  .plan{border:0}
+  table.grid{min-width:0}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="masthead">
-    <div class="kicker">
-      <span>Bayaan Academy</span><span class="dot"></span><span>2026&ndash;2027</span>
-      <span class="dot"></span><span>For teachers</span>
-    </div>
-    <h1>Curriculum <span>Guides</span></h1>
-    <p class="deck">What every grade teaches each quarter: the standards behind it, the units,
-    the vocabulary, and the activities that go with them. Pick a subject.</p>
-  </header>
-
-  <h2 class="sec">Subjects</h2>
-  <div class="grid">
-
-    <a class="card ela" href="ela.html">
-      <div class="band">Grades K&ndash;12</div>
-      <h3>English Language Arts</h3>
-      <p>Anchor texts and the writing unit for every grade, quarter by quarter, with the
-      Florida B.E.S.T. benchmarks behind each one.</p>
-      <div class="meta"><span>Florida B.E.S.T.</span><b>Open <span class="arw">&rarr;</span></b></div>
-    </a>
-
-    <a class="card math" href="math.html">
-      <div class="band">Grades K&ndash;12</div>
-      <h3>Mathematics</h3>
-      <p>Units, benchmarks in full wording, vocabulary and activities for each quarter,
-      through the AP course topics.</p>
-      <div class="meta"><span>B.E.S.T. &middot; AP</span><b>Open <span class="arw">&rarr;</span></b></div>
-    </a>
-
-    <a class="card sci" href="science.html">
-      <div class="band">Grades K&ndash;11</div>
-      <h3>Science</h3>
-      <p>Quarter units and assessments with the Florida NGSSS benchmarks, vocabulary,
-      activities and resources.</p>
-      <div class="meta"><span>Florida NGSSS</span><b>Open <span class="arw">&rarr;</span></b></div>
-    </a>
-
-    <a class="card soc" href="social-studies.html">
-      <div class="band">Grades K&ndash;11</div>
-      <h3>Social Studies</h3>
-      <p>Units, assessments and Florida benchmarks by quarter, through the AP course
-      topics in the upper grades.</p>
-      <div class="meta"><span>Florida &middot; AP</span><b>Open <span class="arw">&rarr;</span></b></div>
-    </a>
-
-    <a class="card qais" href="qais.html">
-      <div class="band">Grades K&ndash;12</div>
-      <h3>Qur&rsquo;an, Arabic &amp; Islamic Studies</h3>
-      <p>Qur&rsquo;an, Tajweed, Arabic, Islamic Studies and Tafseer: what each level covers,
-      how it is assessed and graded, and who teaches it.</p>
-      <div class="meta"><span>Five strands</span><b>Open <span class="arw">&rarr;</span></b></div>
-    </a>
-
+<header class="top">
+  <div class="shell">
+    <a class="mark" href="index.html"><b>Bayaan Academy</b><span>Curriculum guides, 2026&ndash;27</span></a>
+    <nav aria-label="Subject guides">
+      <a href="ela.html">English</a>
+      <a href="math.html">Math</a>
+      <a href="science.html">Science</a>
+      <a href="social-studies.html">Social Studies</a>
+      <a href="qais.html">Qur&rsquo;an &amp; Arabic</a>
+    </nav>
   </div>
+</header>
 
-  <p class="gridnote">Benchmarks, activities, vocabulary and resources sit inside each grade&rsquo;s
-  row in Math, Science and Social Studies. ELA is the one subject that keeps its benchmarks and
-  activities on pages of their own.</p>
+<main class="shell">
 
-  <h2 class="sec">ELA reference pages</h2>
-  <div class="subs">
-    <a class="sub" href="ela-wall.html"><span class="pip"></span>Benchmark wall</a>
-    <a class="sub" href="ela-activities.html"><span class="pip"></span>Activity bank</a>
+  <section class="open">
+    <h1>What your grade teaches, quarter by quarter.</h1>
+    <p>Pick a grade and you get all five subjects side by side for the whole year.
+    Open a subject guide when you need the benchmarks, activities and vocabulary behind a unit.</p>
+  </section>
+
+  <section class="rail" aria-labelledby="pickg">
+    <h2 id="pickg">Pick a grade</h2>
+    <div class="chips" id="chips" role="group" aria-label="Choose a grade"></div>
+  </section>
+
+  <section class="plan" id="plan" aria-live="polite"></section>
+
+  <section class="guides" aria-labelledby="gh">
+    <h2 id="gh">The full subject guides</h2>
+    <p>Each guide opens on a year grid for every grade in that subject. Select a quarter
+    to see its benchmarks in full wording, the activities that go with it, the vocabulary
+    and the resources.</p>
+    <div class="glist" id="glist"></div>
+  </section>
+
+  <section class="notes">
+    <div>
+      <h3>Teacher plans and proposals</h3>
+      <p>Anything marked as a teacher's own comes from their plan for this year. Anything
+      marked proposed was drafted for review and still needs confirming before it counts.</p>
+    </div>
+    <div>
+      <h3>One dataset behind everything</h3>
+      <p>Every guide is rebuilt from a single dataset, so two pages cannot disagree.
+      Send corrections to Aamena. Edits made on a page itself are lost at the next build.</p>
+    </div>
+    <div>
+      <h3>Quarters are colored, not subjects</h3>
+      <p>The four quarter colors run the same way on every page, so a glance tells you where
+      in the year you are rather than which subject you are looking at.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="shell">
+    <p>Built from the teachers' own plans and the Florida standards for each subject: B.E.S.T.
+    for English and mathematics, NGSSS for science and social studies, and the department plans
+    for Qur&rsquo;an, Tajweed, Arabic and Islamic Studies. Writing units, activities, vocabulary
+    and poetry sets were drafted for teacher review and are marked as proposals wherever they appear.</p>
   </div>
+</footer>
 
-  <h2 class="sec">How to use these</h2>
-  <div class="notes">
-    <div class="note">
-      <h3>Find your grade first</h3>
-      <p>Each map opens on a year grid: one row per grade, one column per quarter.
-      Select a tile to see everything taught in that quarter.</p>
-    </div>
-    <div class="note">
-      <h3>Teacher vs. proposed</h3>
-      <p>Items marked <em>teacher</em> come from a teacher&rsquo;s own plan. Items marked
-      <em>proposed</em> were drafted for review and still need confirming.</p>
-    </div>
-    <div class="note">
-      <h3>Corrections go to one place</h3>
-      <p>Every map is rebuilt from a single dataset, so the pages cannot disagree with each
-      other. Send changes to Aamena; edits made anywhere else are lost on the next build.</p>
-    </div>
-  </div>
+<script id="curriculum" type="application/json">{"grades": ["K", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], "cal": {"1": "Aug 10 – Oct 9", "2": "Oct 13 – Dec 18", "3": "Jan 5 – Mar 26 (no classes Mar 1–12)", "4": "Mar 30 – May 28"}, "byGrade": {"K": {"ela": {"course": "English Language Arts", "teacher": "Sameera Khan", "program": null, "q": [{"q": "1", "t": "Telling It Out Loud: Our Class Story Circle", "anchor": "Our Class is a Family", "mode": "Oral narrative"}, {"q": "2", "t": "All About One Thing That Grows", "anchor": "Amara's Farm", "mode": "Informational / Expository"}, {"q": "3", "t": "I Think, Because", "anchor": "Kindness Makes Me Stronger", "mode": "Opinion"}, {"q": "4", "t": "First, Next, Last: A Story in Order", "anchor": "Over and Under the Pond", "mode": "Narrative sequence"}], "href": "ela.html"}, "math": [{"course": "Kindergarten Mathematics", "teacher": "Sameera Khan", "program": "enVision Mathematics, Kindergarten (Savvas)", "q": [{"q": "1", "t": "Classroom routines and readiness", "when": "Weeks 1–2"}, {"q": "1", "t": "enVision Topic 1: Count and compare 0–5", "when": "Week 3"}, {"q": "1", "t": "enVision Topic 2: Count and compare 0–10", "when": "Weeks 4–5"}, {"q": "1", "t": "enVision Topic 3: Classify and count data", "when": "Weeks 6–7"}, {"q": "1", "t": "enVision Topic 4: Count numbers to 20; first to fifth", "when": "Weeks 8–9"}, {"q": "2", "t": "Shapes: name, compare, sort and build 2D and 3D figures", "when": "Oct – Nov"}, {"q": "2", "t": "Measurement: compare length, weight and volume", "when": "Nov – Dec"}, {"q": "3", "t": "Addition and subtraction to 10: make ten, ways to make a number", "when": "Jan – Feb"}, {"q": "3", "t": "Word problems and the equal sign", "when": "Feb – Mar"}, {"q": "4", "t": "Numbers 11–20 as ten and some ones", "when": "Apr"}, {"q": "4", "t": "Count to 100 by ones and tens; add and subtract within 10 fluently", "when": "Apr – May"}], "href": "math.html", "n": {"b": 29, "a": 22, "r": 10}}], "science": [{"course": "Kindergarten Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "All About Me: The Five Senses", "when": "Weeks 1-3"}, {"q": "1", "t": "Real or Make Believe", "when": "Weeks 4-6"}, {"q": "1", "t": "Plants and Animals: Alike and Different", "when": "Weeks 7-9"}, {"q": "2", "t": "Gravity Pulls Things Down", "when": "Weeks 1-3"}, {"q": "2", "t": "Day, Night, and the Sun", "when": "Weeks 4-6"}, {"q": "2", "t": "The Moon and the Sky", "when": "Weeks 7-10"}, {"q": "3", "t": "Looking Closely at Living Things", "when": "Weeks 1-5"}, {"q": "3", "t": "Working Together Like Scientists", "when": "Weeks 6-9"}, {"q": "4", "t": "Sorting and Describing Matter", "when": "Weeks 1-3"}, {"q": "4", "t": "Push, Pull, and Sound", "when": "Weeks 4-6"}, {"q": "4", "t": "Thinking Like Scientists", "when": "Weeks 7-9"}], "href": "science.html", "n": {"b": 19, "a": 22, "r": 10}}], "social": [{"course": "Kindergarten Social Studies", "teacher": "Sameera Khan", "program": "", "q": [{"q": "1", "t": "Rules and Laws", "when": "Weeks 1–3"}, {"q": "1", "t": "Why We Need Rules", "when": "Weeks 4–6"}, {"q": "1", "t": "Good Citizens and Fair Choices", "when": "Weeks 7–9"}, {"q": "2", "t": "Symbols of Our Country and State", "when": "Weeks 1–3"}, {"q": "2", "t": "Calendars and Timelines", "when": "Weeks 4–7"}, {"q": "2", "t": "Then and Now, and Celebrations", "when": "Weeks 8–10"}, {"q": "3", "t": "Time Words and Change at School", "when": "Weeks 1–3"}, {"q": "3", "t": "Jobs and Tools", "when": "Weeks 4–7"}, {"q": "3", "t": "Money, Needs, and Wants", "when": "Weeks 8–11"}, {"q": "4", "t": "Where Is It? Positions and Directions", "when": "Weeks 1–3"}, {"q": "4", "t": "Maps and Globes", "when": "Weeks 4–6"}, {"q": "4", "t": "My Place, Land, Water, and Weather", "when": "Weeks 7–9"}], "href": "social-studies.html", "n": {"b": 29, "a": 25, "r": 12}}], "qais": [{"strand": "Qur'an", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Kindergarten", "goals": 3, "href": "qais.html"}]}, "1": {"ela": {"course": "English Language Arts", "teacher": "Sarah Urrea", "program": null, "q": [{"q": "1", "t": "The Day Something Happened: A Two-Part Story About Me", "anchor": "The Proudest Blue", "mode": "Narrative"}, {"q": "2", "t": "How Big Is It Really? Facts, Pictures and What They Tell Us", "anchor": "Actual Size", "mode": "Informational"}, {"q": "3", "t": "What Should He Do? Saying What You Think and Why", "anchor": "Hey, Little Ant", "mode": "Opinion"}, {"q": "4", "t": "Questions About Our Own Year: A Small Research Book", "anchor": "Golden Domes and Silver Lanterns", "mode": "Research"}], "href": "ela.html"}, "math": [{"course": "Grade 1 Mathematics", "teacher": "Sarah Urrea", "program": "enVision Mathematics, Grade 1 (Savvas)", "q": [{"q": "1", "t": "Understanding addition and subtraction", "when": "Weeks 1–3"}, {"q": "1", "t": "Add and subtract within 20 using strategies", "when": "Weeks 4–7"}, {"q": "1", "t": "Addition and subtraction equations", "when": "Weeks 8–9 into Q2"}, {"q": "2", "t": "Represent and interpret data", "when": "Q2 Weeks 3–5"}, {"q": "2", "t": "Extend the counting sequence; skip count by 2s, 5s, 10s", "when": "Q2 Week 4"}, {"q": "2", "t": "Place value: tens and ones to 100", "when": "Q2 Weeks 6–9"}, {"q": "3", "t": "Measure and compare length", "when": "Jan"}, {"q": "3", "t": "Time to the hour and half hour; coins and bills", "when": "Jan – Feb"}, {"q": "3", "t": "Equal shares: halves and fourths", "when": "Mar"}, {"q": "4", "t": "Shapes: sort, sketch, compose 2D and 3D figures", "when": "Apr"}, {"q": "4", "t": "Add and subtract with tens: two-digit numbers", "when": "May"}], "href": "math.html", "n": {"b": 33, "a": 22, "r": 10}}], "science": [{"course": "Grade 1 Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "Living Things and Their Needs", "when": "Weeks 1-3"}, {"q": "1", "t": "Parts of a Plant", "when": "Weeks 4-6"}, {"q": "1", "t": "Growing Up: Plants and Animals", "when": "Weeks 7-9"}, {"q": "2", "t": "Living Things Need Each Other", "when": "Weeks 1-3"}, {"q": "2", "t": "Properties of Matter", "when": "Weeks 4-7"}, {"q": "3", "t": "Motion: How Things Move", "when": "Weeks 1-4"}, {"q": "3", "t": "Push and Pull", "when": "Weeks 5-7"}, {"q": "3", "t": "Sun, Moon, and Stars", "when": "Weeks 8-11"}, {"q": "4", "t": "Earth's Land, Water, and Resources", "when": "Weeks 1-3"}, {"q": "4", "t": "Investigating Like Scientists", "when": "Weeks 4-6"}], "href": "science.html", "n": {"b": 24, "a": 23, "r": 10}}], "social": [{"course": "Grade 1 Social Studies", "teacher": "Sarah Urrea", "program": "", "q": [{"q": "1", "t": "Being a Historian", "when": "Weeks 1–5"}, {"q": "1", "t": "Important People of the Past", "when": "Weeks 6–7"}, {"q": "1", "t": "National Symbols and Holidays", "when": "Weeks 8–9"}, {"q": "2", "t": "Putting Events in Order", "when": "Weeks 1–5"}, {"q": "2", "t": "African American Contributions", "when": "Weeks 6–10"}, {"q": "3", "t": "Rules and Laws", "when": "Weeks 1–4"}, {"q": "3", "t": "Citizens in Our School and Community", "when": "Weeks 5–8"}, {"q": "3", "t": "Leaders and Government", "when": "Weeks 9–12"}, {"q": "4", "t": "Money, Choices, and Saving", "when": "Weeks 1–3"}, {"q": "4", "t": "Goods and Services", "when": "Weeks 4–5"}, {"q": "4", "t": "Map Skills", "when": "Weeks 6–7"}, {"q": "4", "t": "Our Place on the Earth", "when": "Weeks 8–9"}], "href": "social-studies.html", "n": {"b": 33, "a": 26, "r": 12}}], "qais": [{"strand": "Qur'an", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 1", "goals": 3, "href": "qais.html"}]}, "2": {"ela": {"course": "English Language Arts", "teacher": "Suhad Abukhdeir", "program": null, "q": [{"q": "1", "t": "Small Moments, Real Voices", "anchor": "Could You Would You?", "mode": "Narrative"}, {"q": "2", "t": "How It Works: Explaining a Machine", "anchor": "The Mouse and the Motorcycle", "mode": "Expository"}, {"q": "3", "t": "Was the Boy Fair to the Tree?", "anchor": "The Giving Tree", "mode": "Opinion"}, {"q": "4", "t": "What Helps a Body Calm Down: A Small Research Project", "anchor": "Brianna Banana, Helper of the Day", "mode": "Informational research"}], "href": "ela.html"}, "math": [{"course": "Grade 2 Mathematics", "teacher": "Suhad Abukhdeir", "program": "enVision Mathematics, Grade 2 (Savvas), assumed to follow Grade 1; confirm", "q": [{"q": "1", "t": "Add and subtract within 100; ten and hundred more or less", "when": "Aug – Sep"}, {"q": "1", "t": "Equations, word problems and odd or even", "when": "Sep – Oct"}, {"q": "2", "t": "Place value to 1,000", "when": "Oct – Nov"}, {"q": "2", "t": "Arrays and repeated addition", "when": "Nov"}, {"q": "2", "t": "Measure length; perimeter", "when": "Nov – Dec"}, {"q": "2", "t": "Sort shapes by sides and vertices; lines of symmetry", "when": "Dec"}, {"q": "3", "t": "Addition and subtraction facts to 20 with automaticity", "when": "Jan – Feb"}, {"q": "3", "t": "Money: dollars and coins", "when": "Feb"}, {"q": "3", "t": "Fractions: halves, thirds and fourths", "when": "Mar"}, {"q": "4", "t": "Time to the nearest five minutes", "when": "Apr"}, {"q": "4", "t": "Data: tally charts, pictographs and bar graphs", "when": "Apr – May"}, {"q": "4", "t": "Draw and name two-dimensional figures", "when": "May"}], "href": "math.html", "n": {"b": 34, "a": 30, "r": 10}}], "science": [{"course": "Grade 2 Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "Thinking and Working Like a Scientist", "when": "Weeks 1-3"}, {"q": "1", "t": "Observation Versus Inference", "when": "Weeks 4-6"}, {"q": "1", "t": "Scientists Solve Problems", "when": "Weeks 7-9"}, {"q": "2", "t": "Properties of Matter", "when": "Weeks 1-3"}, {"q": "2", "t": "Solids, Liquids, and Gases", "when": "Weeks 4-6"}, {"q": "2", "t": "Measuring Matter", "when": "Weeks 7-8"}, {"q": "2", "t": "Changing Materials and Energy", "when": "Weeks 9-10"}, {"q": "2", "t": "Forces, Pushes, and Pulls", "when": "Weeks 11-13"}, {"q": "3", "t": "The Human Body", "when": "Weeks 1-4"}, {"q": "3", "t": "Life Cycles", "when": "Weeks 5-7"}, {"q": "3", "t": "Needs and Habitats", "when": "Weeks 8-11"}, {"q": "4", "t": "Rocks and Soil", "when": "Weeks 1-3"}, {"q": "4", "t": "Weather and the Sun", "when": "Weeks 4-9"}], "href": "science.html", "n": {"b": 30, "a": 30, "r": 10}}], "social": [{"course": "Grade 2 Social Studies", "teacher": "Suhad Abukhdeir", "program": "", "q": [{"q": "1", "t": "Why We Have Government and Rules", "when": "Weeks 1–3"}, {"q": "1", "t": "Citizens and Rights", "when": "Weeks 4–6"}, {"q": "1", "t": "Making a Difference", "when": "Weeks 7–8"}, {"q": "1", "t": "The Constitution and Our Symbols", "when": "Week 9"}, {"q": "2", "t": "Types of Maps", "when": "Weeks 1–4"}, {"q": "2", "t": "Our World", "when": "Weeks 5–8"}, {"q": "2", "t": "North America", "when": "Weeks 9–10"}, {"q": "3", "t": "Sources and the First Peoples", "when": "Weeks 1–4"}, {"q": "3", "t": "Newcomers and Colonial Life", "when": "Weeks 5–8"}, {"q": "3", "t": "Immigration Then and Now", "when": "Weeks 9–12"}, {"q": "4", "t": "Limited Resources and Choices", "when": "Weeks 1–4"}, {"q": "4", "t": "Trade, Saving, and Spending", "when": "Weeks 5–9"}], "href": "social-studies.html", "n": {"b": 27, "a": 27, "r": 13}}], "qais": [{"strand": "Qur'an", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades K–2", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 2", "goals": 3, "href": "qais.html"}]}, "3": {"ela": {"course": "English Language Arts", "teacher": "Ruya Adly", "program": "Journeys", "q": [{"q": "1", "t": "One Thing Led to Another: A Small Story With Big Trouble", "anchor": "Mercy Watson to the Rescue", "mode": "Narrative"}, {"q": "2", "t": "Was That Fair? An Opinion With Reasons From the Book", "anchor": "The Chocolate Touch", "mode": "Opinion"}, {"q": "3", "t": "Telling Somebody About It: Expository Writing From Two Books", "anchor": "Charlotte's Web", "mode": "Expository"}, {"q": "4", "t": "Finding Out Like Roz: A Research Project With Two Media", "anchor": "The Wild Robot", "mode": "Research"}], "href": "ela.html"}, "math": [{"course": "Grade 3 Mathematics", "teacher": "Ruya Adly", "program": "enVision Mathematics, Grade 3, Florida B.E.S.T. (Savvas)", "q": [{"q": "1", "t": "Place value and whole numbers to 10,000", "when": "Weeks 1–4"}, {"q": "1", "t": "Multi-digit addition and subtraction", "when": "Weeks 5–7"}, {"q": "2", "t": "Multiplication concepts and strategies", "when": "Weeks 8–12"}, {"q": "2", "t": "Division and the multiplication–division link", "when": "Weeks 13–16"}, {"q": "2", "t": "Number patterns, even and odd, multiples", "when": "Weeks 17–19"}, {"q": "3", "t": "Fractions", "when": "Weeks 20–23"}, {"q": "3", "t": "Measurement, time and data", "when": "Weeks 24–26"}, {"q": "4", "t": "Geometry: lines, quadrilaterals, symmetry", "when": "Weeks 27–30"}, {"q": "4", "t": "Area and perimeter", "when": "Weeks 31–33"}, {"q": "4", "t": "Data, problem solving and year-end review", "when": "Weeks 34–36"}], "href": "math.html", "n": {"b": 41, "a": 28, "r": 10}}], "science": [{"course": "Grade 3 Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "Doing Science Like a Scientist", "when": "Weeks 1–4"}, {"q": "1", "t": "Sun, Stars, and Gravity", "when": "Weeks 5–9"}, {"q": "2", "t": "Earth's Heat and Scientific Models", "when": "Weeks 1–4"}, {"q": "2", "t": "Plants: Structure and Response", "when": "Weeks 5–9"}, {"q": "3", "t": "Sorting Animals and Plants", "when": "Weeks 1–4"}, {"q": "3", "t": "Living Things and the Seasons", "when": "Weeks 5–9"}, {"q": "4", "t": "Properties and Changes of Matter", "when": "Weeks 1–5"}, {"q": "4", "t": "Energy, Light, and Heat", "when": "Weeks 6–9"}], "href": "science.html", "n": {"b": 32, "a": 21, "r": 10}}], "social": [{"course": "Grade 3 Social Studies", "teacher": "Ruya Adly", "program": "", "q": [{"q": "1", "t": "Why We Have Government", "when": "Weeks 1–3"}, {"q": "1", "t": "Citizens and Voting", "when": "Weeks 4–6"}, {"q": "1", "t": "Symbols, Holidays, and Heroes", "when": "Weeks 7–9"}, {"q": "2", "t": "Reading Maps and Globes", "when": "Weeks 1–5"}, {"q": "2", "t": "Continents, Oceans, and Regions", "when": "Weeks 6–10"}, {"q": "3", "t": "Land and Landmarks", "when": "Weeks 1–4"}, {"q": "3", "t": "Climate, Resources, and Settlement", "when": "Weeks 5–8"}, {"q": "3", "t": "People and Cultures", "when": "Weeks 9–12"}, {"q": "4", "t": "Scarcity and Trade", "when": "Weeks 1–4"}, {"q": "4", "t": "Money in North America", "when": "Weeks 5–9"}], "href": "social-studies.html", "n": {"b": 35, "a": 28, "r": 14}}], "qais": [{"strand": "Qur'an", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 3", "goals": 3, "href": "qais.html"}]}, "4": {"ela": {"course": "English Language Arts", "teacher": "Safa Ibrahim", "program": null, "q": [{"q": "1", "t": "A Voice That Is Not Yours: Narrative From Another Point of View", "anchor": "The One and Only Ivan", "mode": "Narrative"}, {"q": "2", "t": "How a Thing Works, Explained From Sources", "anchor": "Where the Red Fern Grows", "mode": "Expository"}, {"q": "3", "t": "Make the Claim, Bring the Evidence", "anchor": "Charlie and the Chocolate Factory", "mode": "Argumentative"}, {"q": "4", "t": "Reading the Writer's Choices", "anchor": "The Secret Garden", "mode": "Rhetorical and literary analysis"}], "href": "ela.html"}, "math": [{"course": "Grade 4 Mathematics", "teacher": "Safa Ibrahim", "program": "enVision+ Mathematics 2027, Grade 4 (Savvas)", "q": [{"q": "1", "t": "enVision Topic 1: Numbers through one million; compare, order, round", "when": "Aug 24 – Sep 4"}, {"q": "1", "t": "enVision Topic 2: Add and subtract whole numbers; estimate", "when": "Sep 7 – 25"}, {"q": "1", "t": "Number sequences, pattern rules, comparison problems", "when": "Sep 28 – Oct 2"}, {"q": "1", "t": "enVision Topic 3: Multiply by multiples of 10, 100, 1,000; estimate products", "when": "Oct 5 – 9"}, {"q": "2", "t": "Multiply two-digit numbers; facts to 12 with automaticity", "when": "Oct – Nov"}, {"q": "2", "t": "Divide by one-digit numbers; remainders; equations", "when": "Nov – Dec"}, {"q": "2", "t": "Factors, multiples, prime and composite", "when": "Dec"}, {"q": "3", "t": "Equivalent fractions; compare and order fractions", "when": "Jan"}, {"q": "3", "t": "Add and subtract fractions and mixed numbers", "when": "Jan – Feb"}, {"q": "3", "t": "Multiply a fraction by a whole number", "when": "Feb"}, {"q": "3", "t": "Tenths and hundredths: fractions to decimals", "when": "Mar"}, {"q": "4", "t": "Measurement conversions, time, distance and money", "when": "Apr"}, {"q": "4", "t": "Data: line plots, stem-and-leaf, mode, median, range", "when": "Apr – May"}, {"q": "4", "t": "Perimeter and area; angles and protractors", "when": "May"}], "href": "math.html", "n": {"b": 46, "a": 33, "r": 10}}], "science": [{"course": "Grade 4 Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "Doing Science Like a Scientist", "when": "Weeks 1–4"}, {"q": "1", "t": "Earth, Sun, Moon, and Stars", "when": "Weeks 5–9"}, {"q": "2", "t": "Rocks and Minerals", "when": "Weeks 1–3"}, {"q": "2", "t": "Earth's Resources and Change", "when": "Weeks 4–9"}, {"q": "3", "t": "Plant and Animal Heredity", "when": "Weeks 1–4"}, {"q": "3", "t": "Energy Flow and Interdependence", "when": "Weeks 5–9"}, {"q": "4", "t": "Matter: Properties and Changes", "when": "Weeks 1–4"}, {"q": "4", "t": "Energy: Forms and Transfer", "when": "Weeks 5–7"}, {"q": "4", "t": "Motion of Objects", "when": "Weeks 8–9"}], "href": "science.html", "n": {"b": 42, "a": 30, "r": 10}}], "social": [{"course": "Florida History", "teacher": "Safa Ibrahim", "program": "", "q": [{"q": "1", "t": "Florida's Land and Weather", "when": "Weeks 1–3"}, {"q": "1", "t": "Reading Florida's Past", "when": "Weeks 4–5"}, {"q": "1", "t": "First Floridians and Explorers", "when": "Weeks 6–9"}, {"q": "2", "t": "Spanish Florida and Fort Mose", "when": "Weeks 1–4"}, {"q": "2", "t": "Seminoles, Territory, and Pioneers", "when": "Weeks 5–10"}, {"q": "3", "t": "Civil War and Reconstruction", "when": "Weeks 1–3"}, {"q": "3", "t": "Florida Industries and People", "when": "Weeks 4–6"}, {"q": "3", "t": "Boom, Bust, and War", "when": "Weeks 7–9"}, {"q": "3", "t": "Earning and Spending", "when": "Weeks 10–12"}, {"q": "4", "t": "Modern Florida", "when": "Weeks 1–3"}, {"q": "4", "t": "Florida Government and Citizens", "when": "Weeks 4–6"}, {"q": "4", "t": "Saving, Credit, and Risk", "when": "Weeks 7–9"}], "href": "social-studies.html", "n": {"b": 70, "a": 52, "r": 14}}], "qais": [{"strand": "Qur'an", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 4", "goals": 3, "href": "qais.html"}]}, "5": {"ela": {"course": "English Language Arts", "teacher": "Amina Nasiru", "program": "Journeys", "q": [{"q": "1", "t": "The Story Only You Can Tell", "anchor": "Fish in a Tree", "mode": "Narrative"}, {"q": "2", "t": "Explain the System", "anchor": "Hatchet", "mode": "Expository"}, {"q": "3", "t": "A Claim Worth Defending", "anchor": "Holes", "mode": "Argumentative"}, {"q": "4", "t": "The Question and the Sources", "anchor": "Because of Winn-Dixie", "mode": "Research synthesis"}], "href": "ela.html"}, "math": [{"course": "Grade 5 Mathematics", "teacher": "Amina Nasiru", "program": "enVision Mathematics, Grade 5 (Savvas)", "q": [{"q": "1", "t": "Divide by tens, hundreds and thousands", "when": "Weeks 1–2"}, {"q": "1", "t": "Write and evaluate expressions; Build a Business Plan", "when": "Weeks 3–4"}, {"q": "1", "t": "Multiply and divide multi-digit whole numbers", "when": "Weeks 5–6"}, {"q": "1", "t": "Add and subtract fractions with unlike denominators", "when": "Weeks 7–8"}, {"q": "1", "t": "Data: mean, median, mode, range with line plots", "when": "Across Q1"}, {"q": "2", "t": "Multiply and divide fractions; fractions as division", "when": "Weeks 1–3"}, {"q": "2", "t": "Measurement conversions", "when": "Weeks 4–6"}, {"q": "2", "t": "Volume of solid figures", "when": "Weeks 7–9"}, {"q": "3", "t": "Classify 2D and 3D figures; area with fractional sides", "when": "Jan – Feb"}, {"q": "3", "t": "Coordinate plane, first quadrant", "when": "Feb – Mar"}, {"q": "3", "t": "Money with decimals", "when": "Mar"}, {"q": "4", "t": "Decimals to the thousandths: place value, compare, round, add and subtract", "when": "Apr – May"}], "href": "math.html", "n": {"b": 43, "a": 35, "r": 14}}], "science": [{"course": "Grade 5 Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "The Galaxy", "when": "Weeks 1–3"}, {"q": "1", "t": "Water Cycle", "when": "Weeks 4–5"}, {"q": "1", "t": "Temperature and Climate", "when": "Weeks 6–7"}, {"q": "1", "t": "Natural Disasters", "when": "Weeks 8–9"}, {"q": "2", "t": "Human Body Systems", "when": "Weeks 1–3"}, {"q": "2", "t": "Plant and Animal Systems", "when": "Weeks 4–6"}, {"q": "2", "t": "Survival of the Fittest", "when": "Weeks 7–9"}, {"q": "3", "t": "Scientific Investigations and Experimental Design", "when": "Weeks 1–3"}, {"q": "3", "t": "Reliability and Replicability in Scientific Investigations", "when": "Weeks 4–5"}, {"q": "3", "t": "Evidence-Based Thinking in Science", "when": "Weeks 6–8"}, {"q": "3", "t": "Understanding Experimental Design in Real-World Science", "when": "Weeks 9–11"}, {"q": "4", "t": "Exploring Matter: Solids, Liquids, Gases, and Solutions", "when": "Weeks 1–2"}, {"q": "4", "t": "What's in Matter? Separating Mixtures and Exploring Atoms", "when": "Weeks 3–4"}, {"q": "4", "t": "Types of Energy", "when": "Weeks 5–7"}, {"q": "4", "t": "Forces and Energy", "when": "Weeks 8–9"}], "href": "science.html", "n": {"b": 37, "a": 34, "r": 11}}], "social": [{"course": "United States History", "teacher": "Amina Nasiru", "program": "", "q": [{"q": "1", "t": "Understanding Time Periods", "when": "Weeks 1–2"}, {"q": "1", "t": "Pre-Columbian North America", "when": "Weeks 3–4"}, {"q": "1", "t": "Exploration and Settlement of North America", "when": "Weeks 5–6"}, {"q": "1", "t": "Colonization of North America", "when": "Weeks 7–9"}, {"q": "2", "t": "American Revolution and Birth of a New Nation", "when": "Weeks 1–2"}, {"q": "2", "t": "Growth and Westward Expansion", "when": "Weeks 3–4"}, {"q": "2", "t": "Foundations of Government, Law, and the American Political System", "when": "Weeks 5–6"}, {"q": "2", "t": "Civic and Political Participation", "when": "Weeks 7–8"}, {"q": "2", "t": "Structure and Functions of Government", "when": "Weeks 9–10"}, {"q": "3", "t": "The Market and International Economy", "when": "Weeks 1–11"}, {"q": "4", "t": "The World in Spatial Terms", "when": "Weeks 1–4"}, {"q": "4", "t": "Environment and Society", "when": "Weeks 5–6"}, {"q": "4", "t": "Uses of Geography", "when": "Weeks 7–9"}], "href": "social-studies.html", "n": {"b": 63, "a": 53, "r": 14}}], "qais": [{"strand": "Qur'an", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 3–5", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 5", "goals": 3, "href": "qais.html"}]}, "6": {"ela": {"course": "English Language Arts", "teacher": "Sundus Hammed", "program": "myPerspectives", "q": [{"q": "1", "t": "What Keeps a Child Out of School: An Expository Explanation", "anchor": "Amal Unbound", "mode": "Expository"}, {"q": "2", "t": "Fair Rules: Making a Claim About Justice", "anchor": "Omar Rising", "mode": "Argumentative"}, {"q": "3", "t": "The Story You Tell About Yourself", "anchor": "Freak the Mighty", "mode": "Narrative"}, {"q": "4", "t": "A Question Worth Asking: A Research Brief on the Community", "anchor": "Amina's Voice", "mode": "Research"}], "href": "ela.html"}, "math": [{"course": "Grade 6 Accelerated Mathematics (M/J 1205020)", "teacher": "Abdus Sami", "program": "No textbook named; IXL, Desmos, teacher notes", "q": [{"q": "1", "t": "Operations with positive rational numbers", "when": "Aug"}, {"q": "1", "t": "Integers and the rational number system", "when": "Sep"}, {"q": "1", "t": "Operations with all rational numbers", "when": "Oct"}, {"q": "2", "t": "Ratios, rates and percent", "when": "Nov"}, {"q": "2", "t": "Proportional relationships", "when": "Dec"}, {"q": "3", "t": "Algebraic expressions", "when": "Jan"}, {"q": "3", "t": "One-variable equations", "when": "Feb"}, {"q": "3", "t": "Inequalities and the coordinate plane", "when": "Mar"}, {"q": "4", "t": "Area, surface area and volume", "when": "Apr"}, {"q": "4", "t": "Data analysis and probability", "when": "May"}], "href": "math.html", "n": {"b": 66, "a": 35, "r": 14}}], "science": [{"course": "M/J Earth/Space Science", "teacher": "Obaida Aloushi", "program": "", "q": [{"q": "1", "t": "Unit 1: Shaping Earth's Surface", "when": "Weeks 1–3"}, {"q": "1", "t": "Unit 2: Landforms and Florida's Unique Features", "when": "Weeks 4–6"}, {"q": "1", "t": "Life Science: Cells to Organisms", "when": "Weeks 7–9"}, {"q": "2", "t": "Unit 3: Energy Transfer in Earth's Systems", "when": "Weeks 1–2"}, {"q": "2", "t": "Unit 4: The Water Cycle and Climate", "when": "Weeks 3–4"}, {"q": "2", "t": "Unit 5: Earth's Interacting Systems", "when": "Weeks 5–6"}, {"q": "2", "t": "Unit 6: Solar Energy and Climate Patterns", "when": "Weeks 7–8"}, {"q": "2", "t": "Unit 7: Weather and Climate Comparison", "when": "Weeks 9–10"}, {"q": "3", "t": "Unit 8: Ocean and Atmosphere Patterns", "when": "Weeks 1–3"}, {"q": "3", "t": "Unit 9: Hurricanes, Tornadoes, and Their Impact", "when": "Weeks 4–6"}, {"q": "3", "t": "Unit 10: Safety and Preparedness", "when": "Weeks 7–8"}, {"q": "3", "t": "Physical Science: Motion, Forces, and Energy", "when": "Weeks 9–11"}, {"q": "4", "t": "Unit 11: Our Protective Blanket, The Atmosphere", "when": "Weeks 1–2"}, {"q": "4", "t": "Unit 12: Comprehensive Review", "when": "Weeks 3–4"}, {"q": "4", "t": "Unit 13: Earth Science in Our Lives", "when": "Weeks 5–6"}], "href": "science.html", "n": {"b": 35, "a": 37, "r": 12}}], "social": [{"course": "M/J World History", "teacher": "Sr. Rita", "program": "", "q": [{"q": "1", "t": "How Historians Study the Past", "when": "Weeks 1–2"}, {"q": "1", "t": "Early Humans and the Rise of Farming", "when": "Weeks 3–4"}, {"q": "1", "t": "Egypt and Mesopotamia", "when": "Weeks 5–7"}, {"q": "1", "t": "Israelites and Early American Civilizations", "when": "Weeks 8–9"}, {"q": "2", "t": "Phoenicia and Ancient Greece", "when": "Weeks 1–4"}, {"q": "2", "t": "The Roman Republic", "when": "Weeks 5–7"}, {"q": "2", "t": "Roman Empire, Early Christianity, Kush and Axum", "when": "Weeks 8–10"}, {"q": "3", "t": "Ancient India", "when": "Weeks 1–5"}, {"q": "3", "t": "Ancient China", "when": "Weeks 6–11"}, {"q": "4", "t": "Trade Routes, the Mongols, and China's Isolation", "when": "Weeks 1–5"}, {"q": "4", "t": "Economies and Populations of the Ancient World", "when": "Weeks 6–9"}], "href": "social-studies.html", "n": {"b": 78, "a": 38, "r": 12}}], "qais": [{"strand": "Qur'an", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 6", "goals": 3, "href": "qais.html"}]}, "7": {"ela": {"course": "English Language Arts", "teacher": "Sundus Hammed", "program": "myPerspectives", "q": [{"q": "1", "t": "Reading It Twice: Line, Voice, and Point of View in a Verse Novel", "anchor": "Kareem Between", "mode": "Narrative"}, {"q": "2", "t": "The Other Side Said: Argument, Allegory, and the Counterclaim", "anchor": "Animal Farm", "mode": "Argumentative"}, {"q": "3", "t": "Four Accounts of One City: Explaining and Analyzing a Source Set", "anchor": "The Breadwinner", "mode": "Expository"}, {"q": "4", "t": "Where Tolkien Got It: A Source-Tracing Research Paper", "anchor": "The Hobbit", "mode": "Research"}], "href": "ela.html"}, "math": [{"course": "Grade 7 Accelerated Mathematics, Pre-Algebra (M/J 1205050)", "teacher": "Abdus Sami", "program": "No textbook named; IXL, Desmos, teacher notes", "q": [{"q": "1", "t": "Exponents and rational numbers", "when": "Aug"}, {"q": "1", "t": "Real numbers and scientific notation", "when": "Sep"}, {"q": "1", "t": "Proportional relationships", "when": "Oct"}, {"q": "2", "t": "Generating equivalent expressions", "when": "Nov"}, {"q": "2", "t": "Equations and inequalities", "when": "Dec"}, {"q": "3", "t": "Linear relationships", "when": "Jan"}, {"q": "3", "t": "Functions", "when": "Feb"}, {"q": "3", "t": "Systems of equations", "when": "Mar"}, {"q": "4", "t": "Geometry: Pythagorean Theorem, transformations, circles and cylinders", "when": "Apr"}, {"q": "4", "t": "Bivariate data and probability; circle graphs", "when": "May"}], "href": "math.html", "n": {"b": 64, "a": 32, "r": 14}}], "science": [{"course": "M/J Life Science", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "Nature of Science: Scientific Inquiry and Problem-Solving", "when": "Weeks 1–5"}, {"q": "1", "t": "Cells & Living Things", "when": "Weeks 6–8"}, {"q": "1", "t": "Earth's Structure and History", "when": "Integrated within Q1"}, {"q": "2", "t": "Characteristics of Life & Classification", "when": "Weeks 1–2"}, {"q": "2", "t": "Human Body & Immunology", "when": "Weeks 3–8"}, {"q": "2", "t": "Energy and Waves", "when": "Integrated within Q2"}, {"q": "3", "t": "Heredity & Reproduction", "when": "Weeks 1–8"}, {"q": "4", "t": "Ecosystems", "when": "Weeks 1–4"}, {"q": "4", "t": "Evolution", "when": "Weeks 5–8"}], "href": "science.html", "n": {"b": 34, "a": 34, "r": 11}}], "social": [{"course": "Geography", "teacher": "Sr. Rita", "program": "", "q": [{"q": "1", "t": "States, Capitals, and Territories", "when": "Weeks 1–3"}, {"q": "1", "t": "Reading Maps of North America", "when": "Weeks 4–5"}, {"q": "1", "t": "Landmarks of the United States", "when": "Weeks 6–7"}, {"q": "1", "t": "Land, Climate, and Regions", "when": "Weeks 8–9"}, {"q": "2", "t": "Natural Resources of North America", "when": "Weeks 1–5"}, {"q": "2", "t": "Cultural Diffusion", "when": "Weeks 6–10"}, {"q": "3", "t": "Population and Demographics", "when": "Weeks 1–6"}, {"q": "3", "t": "Conservation in Our Community", "when": "Weeks 7–11"}, {"q": "4", "t": "Geographic Information Systems", "when": "Weeks 1–9"}], "href": "social-studies.html", "n": {"b": 12, "a": 19, "r": 12}}], "qais": [{"strand": "Qur'an", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 7", "goals": 3, "href": "qais.html"}]}, "8": {"ela": {"course": "English Language Arts", "teacher": "Sundus Hammed", "program": "myPerspectives", "q": [{"q": "1", "t": "Moving Through Time: A Memoir Built on Deliberate Transitions", "anchor": "Tasting the Sky", "mode": "Narrative"}, {"q": "2", "t": "Rebut It: Arguing About How a History Should Be Told", "anchor": "The Boy in the Striped Pajamas", "mode": "Argumentative"}, {"q": "3", "t": "Two Accounts, One War: A Research Paper Built From Real Reporting", "anchor": "Sisters of the War", "mode": "Research"}, {"q": "4", "t": "What Everyone Assumed: Explaining a Character the Story Keeps Underrating", "anchor": "Out of My Mind", "mode": "Expository"}], "href": "ela.html"}, "math": [{"course": "Algebra 1 Honors (1200320)", "teacher": "Abdus Sami", "program": "No textbook named; IXL, Desmos", "q": [{"q": "1", "t": "Expressions and the real number system", "when": "Aug"}, {"q": "1", "t": "Linear equations and inequalities; absolute value", "when": "Sep"}, {"q": "1", "t": "Functions and linear functions", "when": "Oct"}, {"q": "2", "t": "Linear modeling and two-variable inequalities", "when": "Nov"}, {"q": "2", "t": "Systems and bivariate data", "when": "Dec"}, {"q": "3", "t": "Exponential functions; comparing and transforming functions", "when": "Jan"}, {"q": "3", "t": "Financial applications and polynomial operations", "when": "Feb"}, {"q": "3", "t": "Factoring", "when": "Mar"}, {"q": "4", "t": "Quadratic functions", "when": "Apr"}, {"q": "4", "t": "Statistics and EOC review", "when": "May"}], "href": "math.html", "n": {"b": 59, "a": 39, "r": 12}}], "science": [{"course": "M/J Physical Science", "teacher": "Sr. Mageda Moubarak", "program": "", "q": [{"q": "1", "t": "Chapter 1: Science Skills", "when": "Weeks 1–3"}, {"q": "1", "t": "Presenting Scientific Data", "when": "Weeks 4–5"}, {"q": "1", "t": "Motion Concepts", "when": "Weeks 6–7"}, {"q": "1", "t": "Newton's Laws of Motion", "when": "Weeks 8–9"}, {"q": "1", "t": "Space Systems", "when": "Integrated within Q1"}, {"q": "2", "t": "Forces", "when": "Weeks 1–2"}, {"q": "2", "t": "Work and Power", "when": "Weeks 3–4"}, {"q": "2", "t": "Energy", "when": "Weeks 5–6"}, {"q": "2", "t": "Energy Flow in Living Systems", "when": "Integrated within Q2"}, {"q": "3", "t": "Properties and Changes of Matter", "when": "Weeks 1–4"}, {"q": "3", "t": "States of Matter", "when": "Weeks 5–6"}, {"q": "4", "t": "Atomic Theory of Matter", "when": "Weeks 1–3"}, {"q": "4", "t": "The Periodic Table", "when": "Weeks 4–5"}], "href": "science.html", "n": {"b": 50, "a": 41, "r": 10}}], "social": [{"course": "M/J United States History", "teacher": "Sr. Rita", "program": "", "q": [{"q": "1", "t": "Historical Inquiry and Sources", "when": "Weeks 1–2"}, {"q": "1", "t": "The British Colonies Compared", "when": "Weeks 3–5"}, {"q": "1", "t": "Peoples of Colonial America and the French and Indian War", "when": "Weeks 6–7"}, {"q": "1", "t": "The Road to Revolution", "when": "Weeks 8–9"}, {"q": "2", "t": "The American Revolution", "when": "Weeks 1–4"}, {"q": "2", "t": "From Articles to the Constitution", "when": "Weeks 5–7"}, {"q": "2", "t": "Building the New Nation", "when": "Weeks 8–10"}, {"q": "3", "t": "Westward Expansion and Jacksonian Democracy", "when": "Weeks 1–4"}, {"q": "3", "t": "Transportation and Industrial Change", "when": "Weeks 5–7"}, {"q": "3", "t": "Reform Movements, Slavery, and Society", "when": "Weeks 8–11"}, {"q": "4", "t": "The Civil War", "when": "Weeks 1–5"}, {"q": "4", "t": "Reconstruction", "when": "Weeks 6–9"}], "href": "social-studies.html", "n": {"b": 88, "a": 48, "r": 13}}], "qais": [{"strand": "Qur'an", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 6–8", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 8", "goals": 3, "href": "qais.html"}]}, "9": {"ela": {"course": "English Language Arts", "teacher": "Aamena Saleh", "program": null, "q": [{"q": "1", "t": "Who Am I When No One Is Watching? (Personal Narrative)", "anchor": "Watched", "mode": "Narrative"}, {"q": "2", "t": "The Case for Burning: Argument and Counterargument in Fahrenheit 451", "anchor": "Fahrenheit 451", "mode": "Argumentative"}, {"q": "3", "t": "Sources Behind a Self: Research into The Autobiography of Malcolm X", "anchor": "The Autobiography of Malcolm X", "mode": "Research"}, {"q": "4", "t": "What the Imagery Knows: Explaining Conscience in Macbeth", "anchor": "Macbeth", "mode": "Expository"}], "href": "ela.html"}, "math": [{"course": "Geometry Honors (1206320)", "teacher": "Abdus Sami", "program": "No textbook named; IXL, Desmos", "q": [{"q": "1", "t": "Reasoning, proof and angle relationships", "when": "Aug"}, {"q": "1", "t": "Geometric constructions", "when": "Sep"}, {"q": "1", "t": "Transformations and congruence", "when": "Oct"}, {"q": "2", "t": "Triangle congruence and proof", "when": "Nov"}, {"q": "2", "t": "Similarity", "when": "Dec"}, {"q": "3", "t": "Right triangle trigonometry; Law of Sines and Cosines", "when": "Jan"}, {"q": "3", "t": "Parallelograms and trapezoids", "when": "Feb"}, {"q": "3", "t": "Coordinate geometry", "when": "Mar"}, {"q": "4", "t": "Circles", "when": "Apr"}, {"q": "4", "t": "Two- and three-dimensional measurement", "when": "May"}], "href": "math.html", "n": {"b": 51, "a": 38, "r": 12}}], "science": [{"course": "Biology", "teacher": "Teacher not confirmed", "program": "", "q": [{"q": "1", "t": "Scientific Theory", "when": "Weeks 1–4"}, {"q": "1", "t": "Cells and Cell Processes", "when": "Weeks 5–8"}, {"q": "2", "t": "Genetics", "when": "Weeks 1–4"}, {"q": "2", "t": "Reproduction", "when": "Weeks 5–8"}, {"q": "3", "t": "Diversity of Life", "when": "Weeks 1–4"}, {"q": "3", "t": "Human Systems", "when": "Weeks 5–8"}, {"q": "4", "t": "Ecology", "when": "Weeks 1–4"}, {"q": "4", "t": "Evolution", "when": "Weeks 5–8"}], "href": "science.html", "n": {"b": 82, "a": 16, "r": 10}}], "social": [{"course": "U.S. Government", "teacher": "Sr. Rita", "program": "", "q": [{"q": "1", "t": "Origins of American Government", "when": "Weeks 1–4"}, {"q": "1", "t": "Declaration, Articles, and Constitution", "when": "Weeks 5–9"}, {"q": "2", "t": "Citizenship, Rights, and Justice", "when": "Weeks 1–5"}, {"q": "2", "t": "Elections, Media, and Civic Action", "when": "Weeks 6–10"}, {"q": "3", "t": "Constitutional Republic and Federalism", "when": "Weeks 1–4"}, {"q": "3", "t": "The Three Branches", "when": "Weeks 5–8"}, {"q": "3", "t": "Law, Courts, and Government Services", "when": "Weeks 9–12"}, {"q": "4", "t": "America and the World", "when": "Weeks 1–5"}, {"q": "4", "t": "September 11 and Course Review", "when": "Weeks 6–9"}], "href": "social-studies.html", "n": {"b": 78, "a": 43, "r": 12}}, {"course": "Economics Honors", "teacher": "Sr. Rita", "program": "", "q": [{"q": "1", "t": "Scarcity, Choice, and Economic Systems", "when": "Weeks 1–3"}, {"q": "1", "t": "Supply, Demand, and Business", "when": "Weeks 4–5"}, {"q": "1", "t": "Market Structures and Firm Decisions", "when": "Weeks 6–9"}, {"q": "2", "t": "Money, the Fed, and the Business Cycle", "when": "Weeks 1–6"}, {"q": "2", "t": "Credit, Saving, and Budgeting", "when": "Weeks 7–10"}, {"q": "3", "t": "Economic Goals, Growth, and Policy", "when": "Weeks 1–4"}, {"q": "3", "t": "Regulation, Inflation, and Taxes", "when": "Weeks 5–8"}, {"q": "3", "t": "The Federal Reserve, Externalities, and Circular Flow", "when": "Weeks 9–12"}, {"q": "4", "t": "Trade and the Global Economy", "when": "Weeks 1–6"}, {"q": "4", "t": "Comparing Economies and Economic Thought", "when": "Weeks 7–9"}], "href": "social-studies.html", "n": {"b": 34, "a": 34, "r": 11}}], "qais": [{"strand": "Qur'an", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 9", "goals": 3, "href": "qais.html"}]}, "10": {"ela": {"course": "English Language Arts", "teacher": "Sr. Beth Martinez", "program": null, "q": [{"q": "1", "t": "Slowing the Clock: Pace, Tension and Mood in Memoir", "anchor": "Chinese Cinderella", "mode": "Narrative"}, {"q": "2", "t": "What the Poem Will Not Say: Explaining Ambiguity in War Writing", "anchor": "First World War poetry and prose set: Wilfred Owen, Siegfried Sassoon, Rupert Brooke, Isaac Rosenberg, John McCrae", "mode": "Expository"}, {"q": "3", "t": "Performance Task 1 - What Americans Have Argued: A Research Study of Public Address", "anchor": "Research-based reading (PT1): American Public Argument source set", "mode": "Research"}, {"q": "4", "t": "Performance Task 2 - Same Evidence, Opposite Conclusions: A Research Argument", "anchor": "Research-based reading (PT2): Opposing-argument source pairs", "mode": "Argumentative"}], "href": "ela.html"}, "math": [{"course": "Algebra 2 Honors (1200340)", "teacher": "Obaida Aloushi", "program": "Flipped Math: Algebra 2, Common Core Edition (algebra2.flippedmath.com)", "q": [{"q": "1", "t": "Polynomial operations, factoring and division", "when": "Aug 17 – Sep 11"}, {"q": "1", "t": "Polynomial functions: end behavior, zeros, multiplicity, graphs", "when": "Sep 14 – Oct 9"}, {"q": "2", "t": "Rational expressions and equations", "when": "Oct 13 – Nov 6"}, {"q": "2", "t": "Radicals, rational exponents, radical equations", "when": "Nov 9 – 27"}, {"q": "2", "t": "Function transformations; piecewise and absolute value; systems and matrices", "when": "Dec 7 – 18"}, {"q": "3", "t": "Complex numbers; quadratic equations and inequalities", "when": "Jan 5 – 15"}, {"q": "3", "t": "Exponential functions, growth, decay and interest", "when": "Jan 11 – Feb 5"}, {"q": "3", "t": "Logarithms, inverses and composition", "when": "Feb 8 – 26"}, {"q": "3", "t": "Trigonometry: ratios, unit circle, radians", "when": "Mar 15 – 26"}, {"q": "4", "t": "Graph and model with sine and cosine", "when": "Mar 30 – Apr 16"}, {"q": "4", "t": "Arithmetic and geometric sequences and series", "when": "Apr 19 – 30"}, {"q": "4", "t": "Probability, counting and normal distributions; fitting models to data", "when": "May 3 – 14"}], "href": "math.html", "n": {"b": 85, "a": 55, "r": 13}}], "science": [{"course": "Chemistry", "teacher": "Obaida Aloushi", "program": "", "q": [{"q": "1", "t": "Scientific Inquiry in Chemistry", "when": "Weeks 1–3"}, {"q": "1", "t": "Matter and Its Classification", "when": "Weeks 4–6"}, {"q": "1", "t": "Properties of Matter", "when": "Weeks 7–9"}, {"q": "2", "t": "Development of Atomic Theory", "when": "Weeks 1–3"}, {"q": "2", "t": "Periodic Table Organization", "when": "Weeks 4–6"}, {"q": "2", "t": "Ionic, Covalent, and Metallic Bonding", "when": "Weeks 7–9"}, {"q": "3", "t": "Classifying Chemical Reactions", "when": "Weeks 1–3"}, {"q": "3", "t": "Stoichiometry", "when": "Weeks 4–6"}, {"q": "3", "t": "Thermochemistry", "when": "Weeks 7–9"}, {"q": "3", "t": "Factors Affecting Reactions", "when": "Weeks 10–12"}, {"q": "4", "t": "Water: The Universal Solvent", "when": "Weeks 1–2"}, {"q": "4", "t": "Acid-Base Chemistry", "when": "Weeks 3–4"}, {"q": "4", "t": "Energy in Reactions", "when": "Weeks 5–6"}, {"q": "4", "t": "Gas Behavior and Phase Changes", "when": "Weeks 7–9"}], "href": "science.html", "n": {"b": 26, "a": 28, "r": 10}}], "social": [{"course": "AP World History: Modern", "teacher": "Aamena Saleh", "program": "", "q": [{"q": "1", "t": "The Global Tapestry", "when": "Weeks 1–4"}, {"q": "1", "t": "Networks of Exchange", "when": "Weeks 5–9"}, {"q": "2", "t": "Land-Based Empires", "when": "Weeks 1–3"}, {"q": "2", "t": "Transoceanic Interconnections", "when": "Weeks 4–8"}, {"q": "2", "t": "Revolutions", "when": "Weeks 9–10 (Q2), then Weeks 1–4 (Q3)"}, {"q": "3", "t": "Consequences of Industrialization", "when": "Weeks 5–7"}, {"q": "3", "t": "Global Conflict", "when": "Weeks 8–11 (Q3), concludes Weeks 1–2 (Q4)"}, {"q": "3", "t": "Cold War and Decolonization", "when": "Week 11 (Q3), concludes Weeks 1–3 (Q4)"}, {"q": "4", "t": "Globalization", "when": "Weeks 3–5"}, {"q": "4", "t": "AP Exam Review", "when": "Weeks 5–8"}], "href": "social-studies.html", "n": {"b": 71, "a": 32, "r": 12}}], "qais": [{"strand": "Qur'an", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 10", "goals": 3, "href": "qais.html"}]}, "11": {"ela": {"course": "English Language Arts", "teacher": "Aamena Saleh", "program": null, "q": [{"q": "1", "t": "Where the Number Came From: Analyzing How Freakonomics Builds a Claim", "anchor": "Freakonomics (revised and expanded)", "mode": "Expository"}, {"q": "2", "t": "Three Ways to Cross: Complex Narrative and Multiple Perspectives", "anchor": "The Line Becomes A River", "mode": "Narrative"}, {"q": "3", "t": "The Cave, the Trial and the Consulship: A Literary Research Study of Classical Argument", "anchor": "Classical Period speeches and essays: a curated Greek and Roman source set", "mode": "Research"}, {"q": "4", "t": "The Same Human Problem, Four Centuries Apart: A Literary Analysis", "anchor": "Universal themes across times and places: a short literary set of poems and short stories", "mode": "Literary analysis"}], "href": "ela.html"}, "math": [{"course": "AP Precalculus", "teacher": "Obaida Aloushi", "program": "Flipped Math: AP Precalculus (precalculus.flippedmath.com)", "q": [{"q": "1", "t": "Unit 1: Polynomial and Rational Functions", "when": "Aug 10 – Oct 16"}, {"q": "2", "t": "Unit 2: Exponential and Logarithmic Functions", "when": "Oct 19 – Dec 18"}, {"q": "3", "t": "Unit 3: Trigonometric and Polar Functions", "when": "Jan 5 – Mar 26"}, {"q": "4", "t": "AP review: Units 1–3, timed MCQ and FRQ practice", "when": "Mar 30 – May 14"}, {"q": "4", "t": "Unit 4: Functions Involving Parameters, Vectors, and Matrices (after the exam)", "when": "May 17 – 28"}], "href": "math.html", "n": {"b": 58, "a": 29, "r": 11}}], "science": [{"course": "Physics", "teacher": "Sr. Mageda Moubarak", "program": "", "q": [{"q": "1", "t": "Introduction to Science and Scientific Method", "when": "Weeks 1–4"}, {"q": "1", "t": "Motion Concepts", "when": "Weeks 5–7"}, {"q": "1", "t": "Newton's Laws", "when": "Weeks 8–9"}, {"q": "2", "t": "Forces and Orbital Motion", "when": "Weeks 1–3"}, {"q": "2", "t": "Electric Forces (Coulomb's Law)", "when": "Weeks 4–6"}, {"q": "2", "t": "Electric Circuits (Ohm's Law)", "when": "Weeks 7–9"}, {"q": "3", "t": "Energy: Work, Power, Conservation, and Heat", "when": "Weeks 1–4"}, {"q": "3", "t": "Magnetism", "when": "Weeks 5–7"}, {"q": "3", "t": "Momentum and Collisions", "when": "Weeks 8–10"}, {"q": "4", "t": "Entropy and Energy Efficiency", "when": "Weeks 1–2"}, {"q": "4", "t": "Electromagnetic Waves", "when": "Weeks 3–5"}, {"q": "4", "t": "Waves and the Speed of Light", "when": "Weeks 6–9"}], "href": "science.html", "n": {"b": 29, "a": 24, "r": 10}}], "social": [{"course": "AP U.S. History", "teacher": "Sr. Sundus Hammed", "program": "The American Pageant, 17th edition (Ch. 1–40)", "q": [{"q": "1", "t": "Summer Reading Program", "when": "Weeks 1–2"}, {"q": "1", "t": "Unit 1: 1491–1607", "when": "Weeks 3–4"}, {"q": "1", "t": "Unit 2: 1607–1754", "when": "Weeks 4–6"}, {"q": "1", "t": "Unit 3: 1754–1800", "when": "Weeks 6–9"}, {"q": "2", "t": "Unit 4: 1800–1848", "when": "Q1 Week 9; Weeks 1–4"}, {"q": "2", "t": "Unit 5: 1844–1877", "when": "Weeks 5–10"}, {"q": "3", "t": "Unit 6: 1865–1898", "when": "Weeks 1–5"}, {"q": "3", "t": "Unit 7: 1890–1945", "when": "Weeks 6–12"}, {"q": "4", "t": "Unit 8: 1945–1980", "when": "Weeks 1–5"}, {"q": "4", "t": "Unit 9: 1980 to Present", "when": "Weeks 5–6"}, {"q": "4", "t": "AP Exam Review", "when": "Weeks 7–9"}], "href": "social-studies.html", "n": {"b": 101, "a": 25, "r": 12}}], "qais": [{"strand": "Qur'an", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 11", "goals": 3, "href": "qais.html"}]}, "12": {"ela": {"course": "English Language Arts", "teacher": "—", "program": null, "q": [{"q": "1", "t": "AP Lit: Writing From Inside a Consciousness · English IV: Two Sides of One Room", "anchor": "Pride and Prejudice", "mode": "Narrative"}, {"q": "2", "t": "AP Lit: In-Depth Analysis of a Complex Text · English IV: What Justice Permits: Analyzing a Play", "anchor": "Crime and Punishment · Hamlet", "mode": "Literary analysis"}, {"q": "3", "t": "AP Lit: The Literary Research Argument · English IV: Arguing About a Man Who Argued Himself Into It", "anchor": "Crime and Punishment · Wuthering Heights", "mode": "Argument / Research synthesis"}, {"q": "4", "t": "AP Lit: Argument Under Time: Exam Preparation · English IV: Two Books, One Argument: A Capstone Synthesis", "anchor": "Heart of Darkness · The Road", "mode": "Argument / Research synthesis"}], "href": "ela.html"}, "math": [{"course": "AP Calculus AB (1202310)", "teacher": "Not assigned", "program": "Proposed: AP Classroom (free); Flipped Math AP Calculus (calculus.flippedmath.com)", "q": [{"q": "1", "t": "Unit 1: Limits and Continuity", "when": "Aug 10 – Sep 18"}, {"q": "1", "t": "Unit 2: Differentiation: Definition and Basic Derivative Rules", "when": "Sep 21 – Oct 9"}, {"q": "2", "t": "Unit 3: Differentiation: Composite, Implicit, and Inverse Functions", "when": "Oct 13 – Nov 6"}, {"q": "2", "t": "Unit 4: Contextual Applications of Differentiation", "when": "Nov 9 – Dec 4"}, {"q": "2", "t": "Unit 5: Analytical Applications of Differentiation", "when": "Dec 7 – Jan 22"}, {"q": "3", "t": "Unit 6: Integration and Accumulation of Change", "when": "Jan 25 – Feb 26"}, {"q": "3", "t": "Unit 7: Differential Equations", "when": "Mar 15 – 26"}, {"q": "4", "t": "Unit 8: Applications of Integration", "when": "Mar 30 – Apr 24"}, {"q": "4", "t": "AP review, AP Exam, post-exam project", "when": "Apr 27 – May 28"}], "href": "math.html", "n": {"b": 81, "a": 30, "r": 11}}, {"course": "AP Statistics (1210320)", "teacher": "Not assigned", "program": "Proposed: AP Classroom (free); a CED-aligned text (confirm edition covers the fall 2026 course)", "q": [{"q": "1", "t": "Unit 1: Exploring One-Variable Data and Collecting Data", "when": "Aug 10 – Oct 9"}, {"q": "2", "t": "Unit 2: Probability, Random Variables, and Probability Distributions", "when": "Oct 13 – Dec 18"}, {"q": "3", "t": "Unit 3: Inference for Categorical Data: Proportions", "when": "Jan 5 – Mar 26"}, {"q": "4", "t": "Unit 4: Inference for Quantitative Data: Means", "when": "Mar 30 – Apr 17"}, {"q": "4", "t": "Unit 5: Regression Analysis", "when": "Apr 20 – May 1"}, {"q": "4", "t": "AP review, AP Exam, final investigative project", "when": "May 4 – 28"}], "href": "math.html", "n": {"b": 55, "a": 29, "r": 10}}], "qais": [{"strand": "Qur'an", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Tajweed", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Arabic", "scope": "Grades 9–12", "goals": 3, "href": "qais.html"}, {"strand": "Islamic Studies", "scope": "Grade 12", "goals": 3, "href": "qais.html"}]}}}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('curriculum').textContent);
+  var SUBJ = [
+    {k:'ela',   name:'English Language Arts', v:'--ela',  href:'ela.html'},
+    {k:'math',  name:'Mathematics',           v:'--math', href:'math.html'},
+    {k:'science',name:'Science',              v:'--sci',  href:'science.html'},
+    {k:'social',name:'Social Studies',        v:'--soc',  href:'social-studies.html'},
+  ];
+  var CAL = D.cal || {};
+  var chips = document.getElementById('chips');
+  var plan  = document.getElementById('plan');
+  var current = null;
 
-  <footer>
-    Built from the teachers&rsquo; own plans and the Florida standards for each subject.
-    Writing units, activities, vocabulary and poetry sets were drafted for teacher review and
-    are marked as proposals wherever they appear.
-  </footer>
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
 
-</div>
+  function gradeLabel(g){ return g === 'K' ? 'Kindergarten' : 'Grade ' + g; }
+
+  function teachersFor(rec){
+    var names = [];
+    SUBJ.forEach(function(s){
+      var e = rec[s.k];
+      if (!e) return;
+      (Array.isArray(e) ? e : [e]).forEach(function(x){
+        var t = x.teacher;
+        if (t && !/not (assigned|confirmed)/i.test(t) && names.indexOf(t) < 0) names.push(t);
+      });
+    });
+    return names;
+  }
+
+  function cell(units, withAnchor){
+    if (!units || !units.length) return '<td class="cell empty">Not scheduled</td>';
+    var li = units.map(function(u){
+      var s = '<li><span class="ut">' + esc(u.t) + '</span>';
+      if (withAnchor && u.anchor) s += '<span class="anchor">' + esc(u.anchor) + '</span>';
+      return s + '</li>';
+    }).join('');
+    return '<td class="cell"><ul>' + li + '</ul></td>';
+  }
+
+  var KEY = 'bayaan.grade';
+  function remember(g){ try { localStorage.setItem(KEY, g); } catch (e) {} }
+  function recall(){
+    try {
+      var g = localStorage.getItem(KEY);
+      return (g && D.grades.indexOf(g) >= 0) ? g : null;
+    } catch (e) { return null; }
+  }
+
+  function render(g){
+    current = g;
+    remember(g);
+    var rec = D.byGrade[g] || {};
+    var who = teachersFor(rec);
+    var head = '<div class="plan-head"><h3>' + gradeLabel(g) + '</h3>' +
+      (who.length ? '<span class="who">' + esc(who.join(', ')) + '</span>' : '') + '</div>';
+
+    var thead = '<thead><tr><th class="subj" style="--sc:var(--line-2)" scope="col">Subject</th>';
+    ['1','2','3','4'].forEach(function(q){
+      thead += '<th class="qh" scope="col" style="--qc:var(--q' + q + ')">Quarter ' + q +
+               '<span class="wk">' + esc(CAL[q] || '') + '</span></th>';
+    });
+    thead += '</tr></thead>';
+
+    var rows = '';
+    SUBJ.forEach(function(s){
+      var entries = rec[s.k];
+      if (!entries) return;
+      entries = Array.isArray(entries) ? entries : [entries];
+      entries.forEach(function(e){
+        var cname = String(e.course || s.name)
+          .replace(/^(Kindergarten|Grade\s+\d{1,2})\s+/i, '') || s.name;
+        rows += '<tr><th class="subj" scope="row" style="--sc:var(' + s.v + ')">' +
+          esc(cname) +
+          (e.program ? '<span class="course">' + esc(e.program) + '</span>' : '') +
+          '<a href="' + s.href + '">Open the ' + esc(s.name) + ' guide</a></th>';
+        ['1','2','3','4'].forEach(function(q){
+          rows += cell(e.q.filter(function(u){ return String(u.q) === q; }), s.k === 'ela');
+        });
+        rows += '</tr>';
+      });
+    });
+
+    var qais = rec.qais;
+    if (qais && qais.length){
+      var str = qais.map(function(x){
+        return '<div>' + esc(x.strand) + '<span>' + esc(x.scope) + '</span></div>';
+      }).join('');
+      rows += '<tr class="band"><th class="subj" scope="row" style="--sc:var(--qais)">' +
+        'Qur’an, Arabic &amp; Islamic Studies' +
+        '<span class="course">Planned by band, not by quarter</span>' +
+        '<a href="qais.html">Open the QAIS guide</a></th>' +
+        '<td colspan="4"><div class="strands">' + str + '</div></td></tr>';
+    }
+
+    plan.innerHTML = head + '<div class="plan-scroll"><table class="grid">' + thead +
+      '<tbody>' + rows + '</tbody></table></div>' +
+      '<p class="plan-note">Unit titles only. Open a subject guide for the benchmarks, ' +
+      'activities, vocabulary and resources behind each one.</p>';
+
+    Array.prototype.forEach.call(chips.children, function(b){
+      b.setAttribute('aria-pressed', b.dataset.g === g ? 'true' : 'false');
+    });
+  }
+
+  D.grades.forEach(function(g){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'chip';
+    b.dataset.g = g;
+    b.textContent = g;
+    b.setAttribute('aria-pressed','false');
+    b.addEventListener('click', function(){ render(g); });
+    chips.appendChild(b);
+  });
+
+  chips.addEventListener('keydown', function(ev){
+    var keys = {ArrowRight:1, ArrowLeft:-1};
+    if (!(ev.key in keys)) return;
+    var items = Array.prototype.slice.call(chips.children);
+    var i = items.indexOf(document.activeElement);
+    if (i < 0) return;
+    ev.preventDefault();
+    var n = items[(i + keys[ev.key] + items.length) % items.length];
+    n.focus();
+  });
+
+  // subject guide list
+  var G = [
+    {name:'English Language Arts', v:'--ela', href:'ela.html',
+     blurb:'The anchor text and writing unit for every grade and quarter, with the B.E.S.T. benchmarks behind each one. Its benchmarks and activities also live on pages of their own.',
+     stat:'Kindergarten through Grade 12'},
+    {name:'Mathematics', v:'--math', href:'math.html',
+     blurb:'Units by quarter with benchmarks in full wording, vocabulary and activities, running through the AP course topics.',
+     stat:'745 benchmarks, 457 activities, 161 resources'},
+    {name:'Science', v:'--sci', href:'science.html',
+     blurb:'Quarter units with their big idea, the formative and summative checks, and the NGSSS benchmarks each one carries.',
+     stat:'440 benchmarks, 340 activities, 124 resources'},
+    {name:'Social Studies', v:'--soc', href:'social-studies.html',
+     blurb:'Units and assessments by quarter with Florida benchmarks, through AP World History and AP U.S. History.',
+     stat:'719 benchmarks, 450 activities, 163 resources'},
+    {name:'Qur’an, Arabic &amp; Islamic Studies', v:'--qais', href:'qais.html',
+     blurb:'Qur’an, Tajweed, Arabic, Islamic Studies and Tafseer: what each band covers, how it is assessed and graded, and who teaches it.',
+     stat:'Five strands, 121 open questions flagged'}
+  ];
+  document.getElementById('glist').innerHTML = G.map(function(x){
+    return '<a class="g" href="' + x.href + '" style="--gc:var(' + x.v + ')">' +
+      '<h3>' + x.name + '</h3><p>' + x.blurb + '</p>' +
+      '<span class="stat">' + x.stat + '</span></a>';
+  }).join('');
+
+  render(recall() || D.grades[0]);
+})();
+</script>
 </body>
 </html>
